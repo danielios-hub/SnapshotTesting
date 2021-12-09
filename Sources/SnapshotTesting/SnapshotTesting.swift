@@ -20,7 +20,7 @@ public struct SnapshotTesting {
         return value
     }
     
-    static func insertIfNeeded(_ key: SnapshotKey, strategy: SnapshotStrategy) {
+    public static func insertIfNeeded(_ key: SnapshotKey, strategy: SnapshotStrategy) {
         if values[key] == nil {
             values[key] = strategy
         }
